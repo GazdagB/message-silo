@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    max-width: $max-width;
+    margin: 0 auto;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 3rem;
+    font-size: 1.8rem;
+    list-style: none;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+

@@ -1,1 +1,124 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  max-width: 190rem;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 3rem;
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.btn {
+  padding: 2rem;
+  font-size: 1.8rem;
+  border-radius: 0.6rem;
+  border: none;
+}
+.btn--primary {
+  background-image: linear-gradient(to right, #0f77ea, #00d9d0);
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../img/hero-background.png);
+  background-size: cover;
+  position: relative;
+  z-index: 22;
+}
+.hero__container {
+  max-width: 190rem;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 14, 29, 0.85);
+  z-index: -1;
+}
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  height: 60vh;
+}
+.hero__left button {
+  width: 200px;
+}
+.hero__left h3 {
+  font-size: 3.2rem;
+  background: linear-gradient(90deg, #0f77ea 0%, #00d9d0 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero__left h1 {
+  font-size: 6.4rem;
+  display: inline-block;
+  max-width: 70rem;
+  line-height: 108%;
+}
+.hero__left h1 span.colored {
+  color: #00d9d0;
+}
+.hero__left p {
+  font-size: 2.4rem;
+  line-height: 172%;
+  max-width: 70rem;
+}
+.hero__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__right img {
+  height: 65vh;
+  margin-top: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  font-size: 1.8rem;
+  color: #fff;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */

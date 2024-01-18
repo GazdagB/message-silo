@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Message Silo</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
     <section class="hero">
-
-        <div class="navbar">
-            <div class="logo-container"></div>
-            <ul>
-                <li>Home</li>
-                <li>Why</li>
-                <li>Features</li>
-                <li>Find Us</li>
+        <nav class="navbar">
+            <div class="logo-container">
+              <img src="./img/logo.png" alt="" />
+            </div>
+            <ul class="menu">
+              <li class="menu__link"><a href="#">Home</a></li>
+              <li class="menu__link"><a href="#">Why</a></li>
+              <li class="menu__link"><a href="#">Features</a></li>
+              <li class="menu__link"><a href="#">Find Us</a></li>
             </ul>
-        </div>
+          </nav>
 
+      <div class="hero__container">
+        
         <div class="hero__left">
-            <h3>Message Silo</h3>
-            <h1>Clean up the mess of messages</h1>
-            <p>A tool to fix or enrich messages with the power of AI, and make integration simpler for event-driven systems</p>
-            <button>Get Started</button>
+          <h3>Message Silo</h3>
+          <h1>Clean up the mess of <span class="colored">messages</span></h1>
+          <p>
+            A tool to fix or enrich messages with the power of AI, and make
+            integration simpler for event-driven systems
+          </p>
+          <button class="btn btn--primary">Get Started</button>
         </div>
 
         <div class="hero__right">
-            <div class="hero__img">
-                
-            </div>
+          
+            <img src="./img/cubes.png" alt="" />
+        
         </div>
+      </div>
+
     </section>
-</body>
+  </body>
 </html>

@@ -1,0 +1,85 @@
+
+.hero{
+    height: 100vh;
+    background-image: url(../img/hero-background.png);
+    background-size: cover;
+    position: relative;
+    z-index: 22;
+
+    &__container{
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-very-dark-blue,.85);
+        z-index: -1;
+    }
+
+    &__left {
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        height: 60vh;
+        
+        button{
+        width: 200px;
+        }
+
+        h3 {
+            font-size: 3.2rem;
+            background: linear-gradient(90deg, $color-primary 0%, $color-secondary 30%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h1{
+            font-size: 6.4rem;
+            display: inline-block;
+            max-width: 70rem;
+            line-height: 108%;
+            
+            span.colored{
+                color: $color-secondary;
+            }
+        }
+
+        p{
+            font-size: 2.4rem;
+            line-height: 172%;
+            max-width: 70rem;
+        }
+
+        
+      }
+
+      
+
+      &__right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 65vh;
+            margin-top: 5rem;
+        }
+
+      }
+      
+    }
+    

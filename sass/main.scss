@@ -1,0 +1,25 @@
+@import "abstracts/variables";
+
+@import "base/typography";
+
+@import "components/navbar";
+@import "components/buttons";
+
+@import "pages/home";
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    line-height: 1.7;
+    font-size: 1.8rem;   
+    color: $color-base-font-white;
+    position: relative;
+}
