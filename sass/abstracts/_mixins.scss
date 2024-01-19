@@ -1,14 +1,26 @@
-@mixin flexbox($placeContent, $placeItems,$gap: null, $direction: null){
+@mixin flexbox($placeContent: null, $placeItems: null,$gap: null, $direction: null){
 display: flex;
-align-items: $placeItems;
-justify-content: $placeContent;
 
+
+@if $placeItems != null{
+    align-items: $placeItems;
+}
+@if $placeContent != null{
+    justify-content: $placeContent;
+}
 @if $gap != null{
     gap: $gap
 }
 
 @if $direction != null{
-    direction: $direction;
+    flex-direction: $direction;
 }
 
+}
+
+
+@mixin max-width($width: 90%, $margin: 0 auto){
+    max-width: $max-width;
+    width: $width;
+    margin: $margin;
 }

@@ -104,19 +104,17 @@
         width: 90%;
         margin: 0 auto;
         padding: 0 10rem;
-        margin-bottom: 10rem;
     }
 }
 
 .about{
-    max-width: $max-width;
-    width: 90%;
-    margin: 0 auto;
+    @include max-width($margin: 10rem auto);
     @include flexbox(center,space-between);
 
     &__text-container{
     padding-top: 7rem;
     margin-left: -15rem;
+    width: 100%;
 
         h2{
             width: 80%;
@@ -137,6 +135,91 @@
     opacity: 70%;
   }
 
-  
+  .try-it{
+    background-color: $color-bg-secondary;
 
+    &__container{
+    @include max-width;
+    height: 62rem;
+    padding: 0 20rem;
+    @include flexbox(space-between,center,10rem)
+    
+    }
+
+    &__illustration-container{
+        img{
+            margin-bottom: -10rem;
+            height: 100%;
+        }
+    }
+    &__text-container{
+        
+        h2{
+            margin-bottom: 4rem;
+        }
+
+        p{
+            margin-bottom: 4rem;
+        }
+    }
+  }
+
+  .api{
+    @include max-width($margin: 10rem auto);
+    @include flexbox(center,center,5rem);
+
+    &__text-container{
+        @include flexbox(start,start,2rem,column);
+        width: 80rem;
+        padding-right: 20rem;
+    }
+
+    &__illustration-container{
+        img{
+            width: 80rem;
+        }
+    }
+
+    h2{
+        margin-bottom: 3rem;
+    }
+
+    p{
+        margin-bottom: 3rem;
+    }
+  }
+  
+.github{
+
+&-banner{
+@include max-width(80%);
+@include flexbox(center,center,5rem);
+h2{
+    width: 50%;
+}
+height: 25rem;
+background-image: linear-gradient(to right, $color-primary, $color-secondary);
+border-radius: 1rem;
+}   
+
+&-buttons{
+    @include flexbox(center,center,4rem);
+    color: #000 ;
+
+    .github-star{
+        @include flexbox(center,center,1rem);
+        padding: 2.5rem 5rem;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+
+    .github-numbers{
+        padding: 2.5rem 3.5rem;
+        background-color: #fff;
+    }
+
+    
+}
+
+}
 
