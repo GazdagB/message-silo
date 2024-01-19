@@ -65,6 +65,35 @@ a:visited {
   opacity: 1;
 }
 
+.divider {
+  background-color: #021327;
+  height: 18.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider__wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 190rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  max-width: 190rem;
+}
+.service-container h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
 .hero {
   height: 100vh;
   background-image: url(../img/hero-background.png);
@@ -130,16 +159,6 @@ a:visited {
 .hero__right img {
   height: 65vh;
   margin-top: 5rem;
-}
-
-.divider {
-  background-color: #021327;
-  height: 18.6rem;
-  display: flex;
-  direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
 * {
