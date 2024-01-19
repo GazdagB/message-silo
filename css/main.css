@@ -93,19 +93,28 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 2rem;
+  gap: 4rem;
+}
+.service-container--1 img {
+  width: 9rem;
 }
 .service-container--2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
+}
+.service-container--2 img {
+  width: 8rem;
 }
 .service-container--3 {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 2rem;
+  gap: 4rem;
+}
+.service-container--3 img {
+  width: 8rem;
 }
 
 .radius {

@@ -15,20 +15,32 @@
     width: 100%;
     max-width: $max-width;
 
+    
+
     h3{
         font-size: 3.2rem;
         font-weight: 400;
     }
 
     &--1{
-        @include flexbox(start,center,2rem);
+        @include flexbox(start,center,4rem);
+
+        img{
+            width: 9rem
+        }
     }
 
     &--2{
-        @include flexbox(center,center,2rem);
+        @include flexbox(center,center,4rem);
+        img{
+            width: 8rem;
+        }
     }
 
     &--3{
-        @include flexbox(end,center,2rem);
+        @include flexbox(end,center,4rem);
+        img{
+            width: 8rem;
+        }
     }
 }
