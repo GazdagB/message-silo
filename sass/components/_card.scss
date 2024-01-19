@@ -1,0 +1,19 @@
+.radius {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .gradient-border-bg {
+    border: 5px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to bottom,#00D9D0 , #0081FF) 1;
+    padding: 1rem;
+    background: rgba(0,129,255,11%);
+    height: 35rem;
+    width: 100%;
+  }
+  
+
+  
+
+

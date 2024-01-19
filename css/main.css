@@ -108,6 +108,21 @@ a:visited {
   gap: 2rem;
 }
 
+.radius {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gradient-border-bg {
+  border: 5px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(to bottom, #00D9D0, #0081FF) 1;
+  padding: 1rem;
+  background: rgba(0, 129, 255, 0.11);
+  height: 35rem;
+  width: 100%;
+}
+
 .hero {
   height: 100vh;
   background-image: url(../img/hero-background.png);
@@ -186,6 +201,16 @@ a:visited {
 .section__main .message--colored {
   color: #00d9d0;
   font-size: 2rem;
+}
+.section__main .card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 190rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10rem;
 }
 
 * {
