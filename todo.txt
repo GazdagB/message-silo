@@ -3,3 +3,5 @@
     Codepen: https://codepen.io/lasjorg/pen/zYaEVWQ?editors=1100
 
 - Cards Background Glove With Radial Gradient 
+
+-Card Ikonok-at nem lehet a cardra rátenni mert levágja őket a border radius miatt.
