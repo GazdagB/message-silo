@@ -74,7 +74,7 @@ a:visited {
 }
 .divider__wrapper {
   height: 100%;
-  width: 100%;
+  width: 90%;
   max-width: 190rem;
   display: flex;
   align-items: center;
@@ -82,16 +82,30 @@ a:visited {
 }
 
 .service-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 90%;
+  width: 100%;
   max-width: 190rem;
 }
 .service-container h3 {
   font-size: 3.2rem;
   font-weight: 400;
+}
+.service-container--1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+.service-container--2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.service-container--3 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
 }
 
 .hero {
