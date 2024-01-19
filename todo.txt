@@ -1,5 +1,5 @@
-- Writing the border-gradient for the cards properly.
+-[DONE] Writing the border-gradient for the cards properly. 
     Solution Source: https://forum.freecodecamp.org/t/how-to-make-a-css-border-gradient-with-transparent-background/571903/4
     Codepen: https://codepen.io/lasjorg/pen/zYaEVWQ?editors=1100
 
-    
+- Cards Background Glove With Radial Gradient 
