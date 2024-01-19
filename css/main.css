@@ -9,6 +9,21 @@ a:visited {
   text-decoration: none;
 }
 
+.header--primary {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.highlighted {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.colored {
+  color: #00d9d0;
+}
+
 .navbar {
   display: flex;
   width: 90%;
@@ -132,7 +147,6 @@ a:visited {
   height: 35rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 30rem;
 }
 .gradient-border-bg h2 {
   font-size: 3.2rem;
@@ -194,9 +208,6 @@ a:visited {
   max-width: 70rem;
   line-height: 108%;
 }
-.hero__left h1 span.colored {
-  color: #00d9d0;
-}
 .hero__left p {
   font-size: 2.4rem;
   line-height: 172%;
@@ -234,6 +245,35 @@ a:visited {
   width: 90%;
   margin: 0 auto;
   padding: 0 10rem;
+  margin-bottom: 10rem;
+}
+
+.about {
+  max-width: 190rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+.about__text-container {
+  padding-top: 7rem;
+  margin-left: -15rem;
+}
+.about__text-container h2 {
+  width: 80%;
+  max-width: 60rem;
+  margin-bottom: 2rem;
+}
+.about__text-container p {
+  margin-bottom: 3rem;
+  width: 70rem;
+  max-width: 90%;
+  line-height: 174%;
+}
+
+.illustration--laptop {
+  opacity: 70%;
 }
 
 * {

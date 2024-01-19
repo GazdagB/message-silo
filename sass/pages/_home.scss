@@ -53,9 +53,7 @@
             max-width: 70rem;
             line-height: 108%;
             
-            span.colored{
-                color: $color-secondary;
-            }
+            
         }
 
         p{
@@ -106,7 +104,39 @@
         width: 90%;
         margin: 0 auto;
         padding: 0 10rem;
+        margin-bottom: 10rem;
     }
 }
+
+.about{
+    max-width: $max-width;
+    width: 90%;
+    margin: 0 auto;
+    @include flexbox(center,space-between);
+
+    &__text-container{
+    padding-top: 7rem;
+    margin-left: -15rem;
+
+        h2{
+            width: 80%;
+            max-width: 60rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            margin-bottom: 3rem;
+            width: 70rem;
+            max-width: 90%;
+            line-height: 174%;
+        }
+    }
+  }
+  
+  .illustration--laptop{
+    opacity: 70%;
+  }
+
+  
 
 
