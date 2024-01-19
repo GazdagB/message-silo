@@ -203,7 +203,7 @@ border-radius: 1rem;
 }   
 
 &-buttons{
-    @include flexbox(center,center,4rem);
+    @include flexbox(center,center,2.5rem);
     color: #000 ;
 
     .github-star{
@@ -211,15 +211,30 @@ border-radius: 1rem;
         padding: 2.5rem 5rem;
         background-color: #fff;
         border-radius: 1rem;
+        font-size: 2rem;
     }
 
     .github-numbers{
         padding: 2.5rem 3.5rem;
         background-color: #fff;
+        border-radius: 1rem;
+        position: relative;
+        z-index: 1;
+        font-size: 2rem;
+
+        .github-polygon{
+            position: absolute;
+            height: 3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -15%
+        }
     }
 
-    
+
 }
+
+
 
 }
 
