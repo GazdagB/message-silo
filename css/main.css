@@ -132,6 +132,16 @@ a:visited {
   margin-top: 5rem;
 }
 
+.divider {
+  background-color: #021327;
+  height: 18.6rem;
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,4 +153,5 @@ body {
   font-size: 1.8rem;
   color: #fff;
   position: relative;
+  background-color: #020E1D;
 }/*# sourceMappingURL=main.css.map */

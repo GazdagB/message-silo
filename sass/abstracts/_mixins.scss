@@ -1,0 +1,11 @@
+@mixin flexbox($placeContent, $placeItems,$gap: null, $direction: row){
+display: flex;
+direction: $direction;
+align-items: $placeItems;
+justify-content: $placeContent;
+
+@if $gap != null{
+    gap: $gap
+}
+
+}

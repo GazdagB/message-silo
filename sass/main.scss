@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/typography";
 
@@ -22,4 +23,5 @@ body{
     font-size: 1.8rem;   
     color: $color-base-font-white;
     position: relative;
+    background-color: $color-bg-primary;
 }

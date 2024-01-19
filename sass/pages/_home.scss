@@ -84,3 +84,8 @@
       
     }
     
+.divider{
+    background-color: $color-bg-secondary;
+    height: 18.6rem;
+    @include flexbox(center,center,2rem,)
+}
