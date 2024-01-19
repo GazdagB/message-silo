@@ -175,6 +175,19 @@ a:visited {
   margin-top: 5rem;
 }
 
+.section__main .message {
+  width: 80rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  padding: 10rem 0;
+}
+.section__main .message--colored {
+  color: #00d9d0;
+  font-size: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
