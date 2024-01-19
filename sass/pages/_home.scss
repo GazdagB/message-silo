@@ -82,6 +82,10 @@
       
     }
     
+.div-line--hero{
+    position: absolute;
+    bottom: 0;
+}
 .section__main{
 
     .message{
@@ -194,6 +198,7 @@
 &-banner{
 @include max-width(80%);
 @include flexbox(center,center,5rem);
+
 h2{
     width: 50%;
 }

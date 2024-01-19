@@ -1,0 +1,23 @@
+.footer__container{
+    @include flexbox(space-between,start);
+    @include max-width($margin: 10rem auto);
+}
+
+.logo-container{
+    @include flexbox(space-between,center,1rem);
+}
+
+.contact{
+    @include flexbox(start, center, 2rem);
+}
+
+.footer__midle{
+    li{
+        line-height: 250%;
+    }
+}
+
+.footer__copyright{
+    @include flexbox(space-between,center);
+    @include max-width($margin: 4rem auto);
+}

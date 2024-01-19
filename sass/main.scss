@@ -2,11 +2,14 @@
 @import "abstracts/mixins";
 
 @import "base/typography";
+@import "base/utilities";
 
+@import "components/div-line";
 @import "components/navbar";
 @import "components/buttons";
 @import "components/divider";
 @import "components/card"; 
+@import "components/_footer";
 
 
 @import "pages/home";

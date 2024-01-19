@@ -24,6 +24,36 @@ a:visited {
   color: #00d9d0;
 }
 
+.u-margin-end-s {
+  margin-bottom: 1rem;
+}
+
+.u-margin-end-m {
+  margin-bottom: 2rem;
+}
+
+.u-margin-end-l {
+  margin-bottom: 3rem;
+}
+
+.u-margin-end-xl {
+  margin-bottom: 5rem;
+}
+
+.u-margin-end-xxl {
+  margin-bottom: 10rem;
+}
+
+.u-margin-end-xxxl {
+  margin-bottom: 100rem;
+}
+
+.div-line {
+  height: 0.4rem;
+  width: 90vw;
+  background-image: linear-gradient(to right, rgba(2, 19, 39, 0) 40%, rgb(0, 217, 208) 50%, rgba(2, 19, 39, 0) 70%);
+}
+
 .navbar {
   display: flex;
   width: 90%;
@@ -160,6 +190,42 @@ a:visited {
   transform: translateX(-50%);
 }
 
+.footer__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 190rem;
+  width: 90%;
+  margin: 10rem auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.footer__midle li {
+  line-height: 250%;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 190rem;
+  width: 90%;
+  margin: 4rem auto;
+}
+
 .hero {
   height: 100vh;
   background-image: url(../img/hero-background.png);
@@ -222,6 +288,11 @@ a:visited {
 .hero__right img {
   height: 65vh;
   margin-top: 5rem;
+}
+
+.div-line--hero {
+  position: absolute;
+  bottom: 0;
 }
 
 .section__main .message {
