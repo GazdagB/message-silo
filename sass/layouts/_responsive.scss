@@ -1,12 +1,330 @@
-@media only screen and (max-width: 1400px){
-
-    html{font-size: 9px;}
-
-    .section__main{
-        .card__container{
-            padding: 0 1rem;
-        }
-    }
-    
+@media only screen and (max-width: 1600px) {
+  div.github-banner {
+    height: 20rem;
+  }
 }
 
+@media only screen and (max-width: 1400px) {
+  .section__main {
+    .card__container {
+      padding: 0 1rem;
+    }
+  }
+
+  .card__container {
+    width: 20vw;
+    height: 100%;
+  }
+
+  .try-it__container {
+    height: 50rem;
+  }
+
+  .try-it__illustration-container {
+    img {
+      width: 500px;
+    }
+  }
+
+  .service-container--2 {
+    padding-left: 50px;
+  }
+
+  .github-banner {
+    h2 {
+      width: 60rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 2rem 4rem;
+    }
+
+    .github-numbers {
+      padding: 2rem 3rem;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    &__illustration-container {
+      left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .github-banner {
+    h2 {
+      width: 50rem;
+      font-size: 3rem;
+    }
+  }
+
+  .try-it__illustration-container {
+    img {
+      width: 400px;
+    }
+  }
+
+  .about {
+    .illustration--laptop {
+      width: 500px;
+    }
+  }
+
+  .service-container {
+    h3 {
+      font-size: 2.3rem;
+    }
+  }
+
+  .hero__left {
+    h3 {
+      font-size: 2.3rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    button {
+      font-size: 1.8rem;
+      padding: 1.5rem 2.5rem;
+      width: 150px;
+    }
+  }
+
+  //CARDS
+  .gradient-border-bg {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    &__illustration-container {
+      left: 0px;
+    }
+  }
+
+  //TRY IT SECTION
+  .try-it__container {
+    height: 45rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  //TYPEOGRAPHY
+  .header--primary {
+    font-size: 2.8rem;
+  }
+
+  .highlighted {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  //BUTTONS
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .github-banner {
+    padding: 0 10rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 1.5rem 3rem;
+    }
+
+    .github-numbers {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  //HERO SECTION
+  .hero__container{
+    flex-direction: column-reverse;
+    gap: 10rem;
+    width: 100%;
+
+    .hero__right{
+      width: 100vw;
+      height: 30vh;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .hero__left{
+      width: 100%;
+      height: 30vh;
+      padding: 0 5rem;
+      text-align: center;
+      @include flexbox(center,center,);
+
+      h3{
+        font-size: 2.5rem;
+      }
+
+      h1{
+        font-size: 3.5rem;
+      }
+
+      p{
+        font-size: 1.6rem;
+      }
+
+      button{
+        font-size: 1.6rem;
+        padding: 1.5rem 2.5rem;
+        width: 150px;
+      }
+    }
+  }
+  
+
+  //DIVIDER SERVICE ICONS
+
+  .divider__wrapper {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .service-container--1 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  .service-container--2 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  .service-container--3 {
+    gap: 2rem;
+    img {
+      width: 50px;
+    }
+  }
+
+  //CARDS
+  .gradient-border-bg {
+    padding: 10rem 1.5rem 0 1.5rem;
+    line-height: 150%;
+  }
+
+  .section__main {
+    .message {
+      width: 70%;
+    }
+  }
+
+  //ABOUT SECTION
+  .about {
+    margin: 0 auto;
+
+    .illustration--laptop {
+      width: 380px;
+    }
+  }
+
+  //TRY IT SECTION
+  .try-it {
+    .try-it__illustration-container {
+      img {
+        width: 330px;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 850px) {
+  .github-banner {
+    padding: 0 5rem;
+    h2 {
+      font-size: 2.1rem;
+    }
+  }
+
+  .github-buttons {
+    .github-star {
+      padding: 1rem 1.5rem;
+    }
+
+    .github-numbers {
+      padding: 1rem 1.5rem;
+
+      img.github-polygon {
+        left: -20%;
+        height: 20px;
+      }
+    }
+  }
+
+  //DIVIDER SERVICE ICONS
+  .service-container--2 {
+    padding-left: 35px;
+  }
+
+  //ABOUT SECTION
+  .about {
+    .illustration--laptop {
+      width: 300px;
+    }
+  }
+
+ //TRY IT SECTION
+  .try-it {
+
+    &__container{
+      height: 35rem;
+    }
+
+    &__text-container {
+      text-align: center;
+    }
+    .try-it__illustration-container {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .github-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    h2{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
