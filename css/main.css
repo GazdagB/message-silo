@@ -705,6 +705,37 @@ a:visited {
   .try-it .try-it__illustration-container {
     display: none;
   }
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .footer__container .footer__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__container .footer__left .logo-container {
+    transform: translateX(-5%);
+  }
+  .footer__container .footer__midle {
+    width: 50%;
+    text-align: center;
+  }
+  .footer__container .footer__midle ul {
+    list-style: none;
+  }
+  .footer__container .footer__right {
+    width: 50%;
+    text-align: center;
+  }
+  .footer__container .footer__right .contact {
+    justify-content: center;
+  }
+  .footer__container .footer__right img {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .github-banner {
@@ -716,6 +747,32 @@ a:visited {
   .github-banner h2 {
     width: 100%;
     text-align: center;
+  }
+  .divider {
+    height: 100%;
+    padding: 5% 0;
+  }
+  .divider__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .divider__wrapper .service-container {
+    justify-content: center;
+  }
+  .hero__container .hero__right {
+    height: 13vh;
+  }
+  .hero__container .hero__left {
+    height: 100%;
+  }
+  .api {
+    flex-wrap: wrap;
+  }
+  .api__text-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
 }
 * {
