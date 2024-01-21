@@ -63,6 +63,11 @@ a:visited {
   max-width: 190rem;
   margin: 0 auto;
 }
+.navbar__hamburger {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -133,6 +138,7 @@ a:visited {
 .service-container h3 {
   font-size: 3.2rem;
   font-weight: 400;
+  line-height: 125%;
 }
 .service-container--1 {
   display: flex;
@@ -172,14 +178,17 @@ a:visited {
   border: 5px solid;
   border-radius: 10px;
   border-image: linear-gradient(to bottom, #00D9D0, #0081FF) 1;
-  padding: 12rem 3rem 0 3rem;
+  padding: 11rem 3rem 0 3rem;
   background: rgba(0, 129, 255, 0.11);
   height: 35rem;
   width: 100%;
   text-align: center;
+  line-height: 172%;
 }
 .gradient-border-bg h2 {
   font-size: 3.2rem;
+  line-height: 130%;
+  margin-bottom: 1rem;
 }
 .gradient-border-bg img {
   width: 12rem;
@@ -256,6 +265,7 @@ a:visited {
   gap: 5rem;
   justify-content: center;
   height: 60vh;
+  width: 50vw;
 }
 .hero__left button {
   width: 200px;
@@ -267,12 +277,14 @@ a:visited {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  width: 100%;
 }
 .hero__left h1 {
   font-size: 6.4rem;
   display: inline-block;
   max-width: 70rem;
   line-height: 108%;
+  width: 100%;
 }
 .hero__left p {
   font-size: 2.4rem;
@@ -280,13 +292,14 @@ a:visited {
   max-width: 70rem;
 }
 .hero__right {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30vw;
+  height: 80vh;
 }
 .hero__right img {
-  height: 65vh;
+  width: 100%;
   margin-top: 5rem;
 }
 
@@ -322,29 +335,32 @@ a:visited {
   max-width: 190rem;
   width: 90%;
   margin: 10rem auto;
+  height: 60rem;
   display: flex;
-  align-items: space-between;
+  align-items: center;
   justify-content: center;
 }
-.about__text-container {
-  padding-top: 7rem;
-  margin-left: -15rem;
+.about__illustration-container {
+  position: relative;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.about__illustration-container .illustration--laptop {
   width: 100%;
 }
 .about__text-container h2 {
-  width: 80%;
-  max-width: 60rem;
   margin-bottom: 2rem;
 }
 .about__text-container p {
   margin-bottom: 3rem;
-  width: 70rem;
-  max-width: 90%;
   line-height: 174%;
 }
 
 .illustration--laptop {
-  opacity: 70%;
+  opacity: 100%;
 }
 
 .try-it {
@@ -355,15 +371,20 @@ a:visited {
   width: 90%;
   margin: 0 auto;
   height: 62rem;
-  padding: 0 20rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10rem;
 }
-.try-it__illustration-container img {
-  margin-bottom: -10rem;
+.try-it__illustration-container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 50vw;
   height: 100%;
+}
+.try-it__illustration-container img {
+  max-height: 100%;
 }
 .try-it__text-container h2 {
   margin-bottom: 4rem;
@@ -388,10 +409,10 @@ a:visited {
   gap: 2rem;
   flex-direction: column;
   width: 80rem;
-  padding-right: 20rem;
 }
 .api__illustration-container img {
   width: 80rem;
+  max-width: 100%;
 }
 .api h2 {
   margin-bottom: 3rem;
@@ -448,6 +469,312 @@ a:visited {
   left: -15%;
 }
 
+@media only screen and (max-width: 1600px) {
+  div.github-banner {
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .section__main .card__container {
+    padding: 0 1rem;
+  }
+  .card__container {
+    width: 20vw;
+    height: 100%;
+  }
+  .try-it__container {
+    height: 50rem;
+  }
+  .try-it__illustration-container img {
+    width: 500px;
+  }
+  .service-container--2 {
+    padding-left: 50px;
+  }
+  .github-banner h2 {
+    width: 60rem;
+  }
+  .github-buttons .github-star {
+    padding: 2rem 4rem;
+  }
+  .github-buttons .github-numbers {
+    padding: 2rem 3rem;
+  }
+  .about__illustration-container {
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .github-banner h2 {
+    width: 50rem;
+    font-size: 3rem;
+  }
+  .try-it__illustration-container img {
+    width: 400px;
+  }
+  .about .illustration--laptop {
+    width: 500px;
+  }
+  .service-container h3 {
+    font-size: 2.3rem;
+  }
+  .hero__left h3 {
+    font-size: 2.3rem;
+  }
+  .hero__left h1 {
+    font-size: 4rem;
+  }
+  .hero__left p {
+    font-size: 1.8rem;
+  }
+  .hero__left button {
+    font-size: 1.8rem;
+    padding: 1.5rem 2.5rem;
+    width: 150px;
+  }
+  .gradient-border-bg h2 {
+    font-size: 2.5rem;
+  }
+  .about__illustration-container {
+    left: 0px;
+  }
+  .try-it__container {
+    height: 45rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header--primary {
+    font-size: 2.8rem;
+  }
+  .highlighted {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+  .navbar {
+    padding: 3rem 5rem;
+  }
+  .navbar__hamburger {
+    display: block;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .github-banner {
+    padding: 0 10rem;
+  }
+  .github-banner h2 {
+    font-size: 2.5rem;
+  }
+  .github-buttons .github-star {
+    padding: 1.5rem 3rem;
+  }
+  .github-buttons .github-numbers {
+    padding: 1.5rem 2rem;
+  }
+  .hero__container {
+    flex-direction: column-reverse;
+    gap: 10rem;
+    width: 100%;
+  }
+  .hero__container .hero__right {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 4%;
+  }
+  .hero__container .hero__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .hero__container .hero__left {
+    width: 100%;
+    height: 22vh;
+    padding: 0 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+  }
+  .hero__container .hero__left h3 {
+    font-size: 3rem;
+  }
+  .hero__container .hero__left h1 {
+    font-size: 4rem;
+  }
+  .hero__container .hero__left p {
+    font-size: 1.6rem;
+  }
+  .hero__container .hero__left button {
+    font-size: 1.6rem;
+    padding: 1.5rem 2.5rem;
+    width: 150px;
+  }
+  .divider__wrapper h3 {
+    font-size: 2rem;
+  }
+  .service-container--1 {
+    gap: 2rem;
+  }
+  .service-container--1 img {
+    width: 50px;
+  }
+  .service-container--2 {
+    gap: 2rem;
+  }
+  .service-container--2 img {
+    width: 50px;
+  }
+  .service-container--3 {
+    gap: 2rem;
+  }
+  .service-container--3 img {
+    width: 50px;
+  }
+  .gradient-border-bg {
+    padding: 10rem 1.5rem 0 1.5rem;
+    line-height: 150%;
+  }
+  .section__main .message {
+    width: 70%;
+  }
+  .about {
+    margin: 0 auto;
+  }
+  .about .illustration--laptop {
+    width: 380px;
+  }
+  .try-it .try-it__illustration-container img {
+    width: 330px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section__main .card__container {
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  .section__main .card__container .gradient-border-bg {
+    height: 30rem;
+  }
+  .github-banner {
+    padding: 0 5rem;
+  }
+  .github-banner h2 {
+    font-size: 2.1rem;
+  }
+  .github-buttons .github-star {
+    padding: 1rem 1.5rem;
+  }
+  .github-buttons .github-numbers {
+    padding: 1rem 1.5rem;
+  }
+  .github-buttons .github-numbers img.github-polygon {
+    left: -20%;
+    height: 20px;
+  }
+  .service-container--2 {
+    padding-left: 35px;
+  }
+  .about {
+    height: 80rem;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5rem;
+    justify-content: center;
+  }
+  .about .illustration--laptop {
+    width: 80%;
+    transform: translateX(3%);
+  }
+  .about__text-container {
+    width: 100%;
+    text-align: center;
+  }
+  .try-it__container {
+    height: 35rem;
+  }
+  .try-it__text-container {
+    text-align: center;
+  }
+  .try-it .try-it__illustration-container {
+    display: none;
+  }
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .footer__container .footer__left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__container .footer__left .logo-container {
+    transform: translateX(-5%);
+  }
+  .footer__container .footer__midle {
+    width: 50%;
+    text-align: center;
+  }
+  .footer__container .footer__midle ul {
+    list-style: none;
+  }
+  .footer__container .footer__right {
+    width: 50%;
+    text-align: center;
+  }
+  .footer__container .footer__right .contact {
+    justify-content: center;
+  }
+  .footer__container .footer__right img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .github-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .github-banner h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .divider {
+    height: 100%;
+    padding: 5% 0;
+  }
+  .divider__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .divider__wrapper .service-container {
+    justify-content: center;
+  }
+  .hero__container .hero__right {
+    height: 13vh;
+  }
+  .hero__container .hero__left {
+    height: 100%;
+  }
+  .api {
+    flex-wrap: wrap;
+  }
+  .api__text-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
