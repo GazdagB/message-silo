@@ -279,6 +279,20 @@
 }
 
 @media only screen and (max-width: 850px) {
+  
+  // CARDS SECTION  
+  .section__main{
+    .card__container{
+      flex-wrap: wrap;
+      gap: 10rem;
+
+      .gradient-border-bg{
+        height: 30rem;
+      }
+    }
+    
+  };
+ 
   .github-banner {
     padding: 0 5rem;
     h2 {
@@ -308,8 +322,21 @@
 
   //ABOUT SECTION
   .about {
+
+    height: 80rem;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5rem;
+    justify-content: center;
+
     .illustration--laptop {
-      width: 300px;
+      width: 80%;
+      transform: translateX(3%);
+    }
+
+    &__text-container {
+      width: 100%;
+      text-align: center;
     }
   }
 

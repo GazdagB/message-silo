@@ -655,6 +655,13 @@ a:visited {
   }
 }
 @media only screen and (max-width: 850px) {
+  .section__main .card__container {
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  .section__main .card__container .gradient-border-bg {
+    height: 30rem;
+  }
   .github-banner {
     padding: 0 5rem;
   }
@@ -674,8 +681,20 @@ a:visited {
   .service-container--2 {
     padding-left: 35px;
   }
+  .about {
+    height: 80rem;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5rem;
+    justify-content: center;
+  }
   .about .illustration--laptop {
-    width: 300px;
+    width: 80%;
+    transform: translateX(3%);
+  }
+  .about__text-container {
+    width: 100%;
+    text-align: center;
   }
   .try-it__container {
     height: 35rem;
