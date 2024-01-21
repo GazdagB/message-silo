@@ -63,6 +63,11 @@ a:visited {
   max-width: 190rem;
   margin: 0 auto;
 }
+.navbar__hamburger {
+  width: 4rem;
+  height: 4rem;
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -550,6 +555,15 @@ a:visited {
   .btn {
     padding: 1.5rem 2rem;
     font-size: 1.6rem;
+  }
+  .navbar {
+    padding: 3rem 5rem;
+  }
+  .navbar__hamburger {
+    display: block;
+  }
+  .navbar .menu {
+    display: none;
   }
   .github-banner {
     padding: 0 10rem;

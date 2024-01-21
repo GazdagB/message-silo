@@ -140,6 +140,19 @@
     font-size: 1.6rem;
   }
 
+  //NAVBAR
+  .navbar{
+    padding: 3rem 5rem;
+
+    &__hamburger{
+      display: block;
+    }
+
+    .menu{
+      display: none;
+    }
+  }
+
   .github-banner {
     padding: 0 10rem;
     h2 {
