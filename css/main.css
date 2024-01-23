@@ -815,6 +815,23 @@ a:visited {
     font-size: 1.2rem;
   }
 }
+@media only screen and (max-height: 1256px) {
+  .hero__container .hero__left {
+    height: 100%;
+  }
+}
+@media only screen and (max-height: 865px) {
+  .hero__container {
+    height: 70%;
+  }
+  .hero__container .hero__left {
+    height: 100%;
+    margin: auto 0;
+  }
+  .hero__container .hero__right {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
