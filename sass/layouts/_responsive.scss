@@ -17,7 +17,7 @@
   }
 
   .try-it__container {
-    height: 50rem;
+    height: 100%;
   }
 
   .try-it__illustration-container {
@@ -350,51 +350,68 @@
 
   //FOOTER SECTION
   .footer__container {
+    padding: 0 5rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 5rem;
 
     .footer__left {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: start;
 
-      .logo-container{
-       transform: translateX(-5%);
-      }
+     
     }
 
     .footer__midle {
       width: 50%;
-      text-align: center;
+      text-align: start;
+      transform: translateX(2rem);
 
-      ul {
-        list-style: none;
+      h3{
+        transform: translateX(-2rem);
+      }
+
+      ul{
+        font-size: 1.5rem;
       }
     }
 
     .footer__right {
-      width: 50%;
-      text-align: center;
+      width: 100%;
+      text-align: start;
       .contact {
-        justify-content: center;
+        font-size: 1.5rem;
       }
 
-      img {
-        display: none;
-      }
     }
+
+    .footer__copyright{
+
+      p{
+        font-size: 1.2rem;
+      }
+      
+    }
+
   }
 }
 
 @media only screen and (max-width: 768px) {
+
+  div.github-banner {
+    height: auto;
+    padding: 3rem 1rem;
+    width: 85%;
+  }
+
   .github-banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
+    
     h2 {
       width: 100%;
       text-align: center;
@@ -437,6 +454,22 @@
       width: 100%;
       text-align: center;
       align-items: center;
+    }
+  }
+
+  .try-it{
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__copyright{
+    flex-direction: column;
+    align-items: start;
+    padding: 0 2.5rem;
+    p{
+      font-size: 1.2rem;
     }
   }
 }
