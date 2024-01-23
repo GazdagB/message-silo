@@ -55,6 +55,10 @@ a:visited {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -62,6 +66,7 @@ a:visited {
   padding: 5rem 0;
   max-width: 190rem;
   margin: 0 auto;
+  z-index: 10;
 }
 .navbar__hamburger {
   width: 3.5rem;
@@ -254,7 +259,7 @@ a:visited {
   background-image: url(../img/hero-background.png);
   background-size: cover;
   position: relative;
-  z-index: 22;
+  z-index: 1;
 }
 .hero__container {
   max-width: 190rem;

@@ -1,4 +1,8 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     width: 90%;
     justify-content: space-between;
@@ -6,7 +10,7 @@
     padding: 5rem 0;
     max-width: $max-width;
     margin: 0 auto;
-    
+    z-index: 10;
     &__hamburger{
         width: 3.5rem;
         height: 3.5rem;
