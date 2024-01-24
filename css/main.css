@@ -55,7 +55,7 @@ a:visited {
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -614,7 +614,7 @@ a:visited {
   }
   .hero__container .hero__left {
     width: 100%;
-    padding: 0 5rem;
+    padding: 0 2rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -760,6 +760,9 @@ a:visited {
   }
 }
 @media only screen and (max-width: 768px) {
+  .hero .hero__left h1 {
+    font-size: 3.5rem;
+  }
   div.github-banner {
     height: auto;
     padding: 3rem 1rem;
@@ -817,6 +820,14 @@ a:visited {
 @media only screen and (max-height: 650px) {
   .hero__container .hero__right {
     display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero__container {
+    gap: 2rem;
+  }
+  .hero__container .hero__right img {
+    height: 60%;
   }
 }
 * {

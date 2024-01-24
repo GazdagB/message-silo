@@ -191,7 +191,7 @@
 
     .hero__left {
       width: 100%;
-      padding: 0 5rem;
+      padding: 0 2rem;
       text-align: center;
       @include flexbox(center, center, 2vh);
 
@@ -401,6 +401,14 @@
 
 @media only screen and (max-width: 768px) {
 
+  .hero{
+    .hero__left{
+      h1{
+        font-size: 3.5rem;
+      }
+    }
+  }
+
   div.github-banner {
     height: auto;
     padding: 3rem 1rem;
@@ -438,15 +446,6 @@
     }
   }
 
-  .hero__container{
-    .hero__right{
-     
-    }
-
-    .hero__left{
-      
-    }
-  }
 
   .api{
     flex-wrap: wrap;
@@ -488,6 +487,13 @@
   }
 }
 
-@media only screen and (max-height: 500px) {
-  
+@media only screen and (max-width: 450px){
+  .hero__container {
+      gap: 2rem;
+    .hero__right {
+      img{
+        height: 60%;
+      }
+    }
+  }
 }
