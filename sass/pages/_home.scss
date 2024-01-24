@@ -8,10 +8,12 @@
 
     &__container{
         max-width: $max-width;
+        height: 100%;
         margin: 0 auto;
         width: 90%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     
 
@@ -32,8 +34,7 @@
         margin-top: 3%;
         gap: 5rem;
         justify-content: center;
-        height: 60vh;
-        width: 50vw;
+        width: 50%;
         
         button{
         width: 200px;

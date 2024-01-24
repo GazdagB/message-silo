@@ -173,13 +173,14 @@
   //HERO SECTION
   .hero__container {
     flex-direction: column-reverse;
+    justify-content: center;
     gap: 10rem;
     width: 100%;
 
     .hero__right {
       width: 100%;
       height: 30vh;
-      margin-top: 4%;
+      
 
       img {
         width: 100%;
@@ -190,7 +191,6 @@
 
     .hero__left {
       width: 100%;
-      height: 22vh;
       padding: 0 5rem;
       text-align: center;
       @include flexbox(center, center, 2vh);
@@ -440,11 +440,11 @@
 
   .hero__container{
     .hero__right{
-     height: 13vh;
+     
     }
 
     .hero__left{
-      height: 100%;
+      
     }
   }
 
@@ -476,32 +476,18 @@
 }
 
 
-@media only screen and (max-height: 1256px) {
-  .hero__container{
-   
 
-    .hero__left{
-      height: 100%;
+
+
+@media only screen and (max-height: 650px) {
+  .hero__container {
+    
+    .hero__right {
+      display: none;
     }
   }
 }
 
-
-@media only screen and (max-height: 865px) {
-  .hero__container{
-
-      height: 70%;
-      
-      .hero__left{
-        height: 100%;
-        margin: auto 0;
-      }
-
-      .hero__right{
-        display: none;
-      }
-   
-
-    
-  }
+@media only screen and (max-height: 500px) {
+  
 }
