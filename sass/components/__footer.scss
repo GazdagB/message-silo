@@ -14,6 +14,23 @@
 .footer__midle{
     li{
         line-height: 250%;
+        list-style-image: url('../img/arrow-right.svg');
+        display: flex;
+        align-items: center;
+        
+        &:before{
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 1rem;
+            background-image: url(../img/arrow.svg);
+        }
+
+        
     }
 }
 

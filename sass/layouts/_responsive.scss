@@ -17,7 +17,7 @@
   }
 
   .try-it__container {
-    height: 50rem;
+    height: 100%;
   }
 
   .try-it__illustration-container {
@@ -173,13 +173,14 @@
   //HERO SECTION
   .hero__container {
     flex-direction: column-reverse;
+    justify-content: center;
     gap: 10rem;
     width: 100%;
 
     .hero__right {
-      width: 100vw;
+      width: 100%;
       height: 30vh;
-      margin-top: 4%;
+      
 
       img {
         width: 100%;
@@ -190,8 +191,7 @@
 
     .hero__left {
       width: 100%;
-      height: 22vh;
-      padding: 0 5rem;
+      padding: 0 2rem;
       text-align: center;
       @include flexbox(center, center, 2vh);
 
@@ -350,51 +350,77 @@
 
   //FOOTER SECTION
   .footer__container {
+    padding: 0 5rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 5rem;
 
     .footer__left {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: start;
 
-      .logo-container{
-       transform: translateX(-5%);
-      }
+     
     }
 
     .footer__midle {
-      width: 50%;
-      text-align: center;
+      width: 100%;
+      text-align: start;
+      transform: translateX(2rem);
 
-      ul {
-        list-style: none;
+      h3{
+        transform: translateX(-2rem);
+      }
+
+      ul{
+        font-size: 1.5rem;
+        width: 100%;
       }
     }
 
     .footer__right {
-      width: 50%;
-      text-align: center;
+      width: 100%;
+      text-align: start;
       .contact {
-        justify-content: center;
+        font-size: 1.5rem;
       }
 
-      img {
-        display: none;
-      }
     }
+
+    .footer__copyright{
+
+      p{
+        font-size: 1.2rem;
+      }
+      
+    }
+
   }
 }
 
 @media only screen and (max-width: 768px) {
+
+  .hero{
+    .hero__left{
+      h1{
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  div.github-banner {
+    height: auto;
+    padding: 3rem 1rem;
+    width: 85%;
+  }
+
   .github-banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
+    
     h2 {
       width: 100%;
       text-align: center;
@@ -403,7 +429,7 @@
 
   .divider{
     height: 100%;
-    padding: 5% 0;
+    padding: 10% 0;
     &__wrapper{
         flex-direction: column;
         align-items: center;
@@ -411,19 +437,15 @@
 
         .service-container{
           justify-content: center;
+          flex-direction: column;
+        }
+
+        .service-container--2{
+          padding-left: 0;
         }
     }
   }
 
-  .hero__container{
-    .hero__right{
-     height: 13vh;
-    }
-
-    .hero__left{
-      height: 100%;
-    }
-  }
 
   .api{
     flex-wrap: wrap;
@@ -432,6 +454,46 @@
       width: 100%;
       text-align: center;
       align-items: center;
+    }
+  }
+
+  .try-it{
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__copyright{
+    flex-direction: column;
+    align-items: start;
+    padding: 0 2.5rem;
+    p{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-height: 650px) {
+  .hero__container {
+    
+    .hero__right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .hero__container {
+      gap: 2rem;
+    .hero__right {
+      img{
+        height: 60%;
+      }
     }
   }
 }
