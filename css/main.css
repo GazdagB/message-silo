@@ -143,6 +143,11 @@ nav {
     background: url(../img/x-solid.svg) no-repeat center center;
   }
 }
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 .btn {
   padding: 2rem 3rem;
   font-size: 1.8rem;
